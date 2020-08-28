@@ -1,27 +1,103 @@
-div.col-md-9 h1:first-of-type {
-  text-align: center;
-  font-size: 60px;
-  font-weight: 300;
+/* 头部 */
+.md-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  height: 50px;
+  color: var(--md-primary-bg-color);
+  background-color: #2b303b;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0), 0 0.2rem 0.4rem rgba(0, 0, 0, 0);
+  transition: color 250ms, background-color 250ms;
 }
 
-div.col-md-9 > p:first-of-type {
-  text-align: center;
+.md-header-nav__button.md-logo {
+  margin: 2px;
+  padding: 4px;
 }
 
-div.col-md-9 p.admonition-title:first-of-type {
-  text-align: left;
+.md-header-nav__button.md-logo img,
+.md-header-nav__button.md-logo svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
 }
 
-div.col-md-9 h1:first-of-type .headerlink {
-  display: none;
+.md-header-nav__title {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: bold;
 }
 
-code.no-highlight {
-  color: black;
+.md-search__inner {
+  position: relative;
+  float: right;
+  width: 320px;
+  height: 10px !important;
+  padding: 1px 0px;
+  transition: width 250ms cubic-bezier(0.1, 0.7, 0.1, 1);
 }
 
-/* Definition List styles */
+/* 主体 */
+.md-main {
+  flex-grow: 1;
+  background-color: honeydew;
+}
+.md-main__inner {
+  display: flex;
+  height: 100%;
+  margin-top: 0px;
+}
 
-dd {
-  padding-left: 20px;
+/* 主体左边 */
+.md-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2.4rem;
+  align-self: flex-start;
+  width: 12.1rem;
+  padding: 1.2rem 0;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+/* footer */
+.md-footer {
+  color: #ffffff;
+  background-color: #2e3033;
+  /* height: 50px; */
+}
+/* 
+.md-footer-nav__button {
+  margin: -22px;
+  padding: 1px;
+}
+.md-footer-nav__direction {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: -45px;
+  padding: 1px 40px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.md-footer-nav__link {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: opacity 250ms;
+} */
+.md-footer-copyright {
+  width: 100%;
+  margin: auto 35%;
+  padding: 0.4rem 0;
+  color: #999999;
+  font-size: 12px;
 }
