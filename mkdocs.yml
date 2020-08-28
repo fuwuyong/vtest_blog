@@ -1,0 +1,72 @@
+site_name: VTest # 项目名称
+site_favicon: images/logo.ico # 图标
+site_author: VTest
+site_description: VTest
+# site_url: https://www.vtest.top
+copyright: Copyright © 2020 <a href="/about/">VTest Team</a>. <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备20004061号-1</a> # 版权
+
+theme: # 样式
+  name: material
+  language: zh
+  palette: # 颜色
+    primary: flatly # light blue
+    accent: indigo
+  feature:
+    tabs: true # 横向导航
+  # custom_dir: 'docs/resources/'
+  logo: images/logo.png
+  # # palette:
+  # primary: black
+  accent: deep orange
+
+markdown_extentions:
+  - admonition # 提示块
+  - footnotes # 脚注
+  - meta # 定义元数据，通过文章上下文控制，如disqus
+  - pymdownx.caret # 下划线上标
+  - pymdownx.tilde # 删除线下标
+  - pymdownx.critic # 增加删除修改高亮注释，可修饰行内或段落
+  - pymdownx.details # 提示块可折叠
+  - pymdownx.inlinehilite # 行内代码高亮
+  - pymdownx.mark # 文本高亮
+  - pymdownx.smartsymbols # 符号转换
+  - pymdownx.superfences # 代码嵌套在列表里
+  - codehilite: # 代码高亮，显示行号
+      guess_lang: false
+      linenums: true
+  - toc: # 锚点
+      permalink: true
+  #  - pymdownx.arithmatex  # 数学公式
+  - pymdownx.betterem: # 对加粗和斜体更好的检测
+      smart_enable: all
+  #  - pymdownx.emoji:  # 表情
+  #      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  #  - pymdownx.magiclink  # 自动识别超链接
+  - pymdownx.tasklist: # 复选框checklist
+      custom_checkbox: true
+
+# plugins:
+#   - search:
+#     lang: en
+#     foo: bar
+# - pdf-export #这个插件还有点问题 pip3 install mkdocs-pdf-export-plugin
+#
+#
+
+repo_url: https://github.com/fuwuyong/vtest_blog
+
+extra_css:
+  - css/extra.css
+
+nav:
+  - 首页: index.md
+  - 软件测试:
+      - 移动端测试: softtest/app_1.md
+      - 移动端弱网测试: softtest/app_2.md
+      - 移动自动化测试之Appium: softtest/app_3.md
+      - LoadRunner入门: softtest/lr_1.md
+  - Python之路:
+      - 移动端测试: python/app_1.md
+      - 移动端弱网测试: python/app_2.md
+      - 移动自动化测试之Appium: python/app_3.md
+  - 关于: about.md
