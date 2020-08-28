@@ -4,7 +4,7 @@
 
 ## 1. 弱网测试的思路
 
-![Image text](images/1.png)
+![Image text](img/1.png)
 
 - 总结:弱网测试主要进行特殊网络状态下的功能测试同时关注用户体验，具体来说，弱网测试包括弱网功能测试、无网状态测试、网络切换测试等，测试的同时关注用户体验的诸多方面。
 
@@ -36,25 +36,25 @@
 
 ### 2.1 设置代理
 
-![Image text](images/5.png)
+![Image text](img/5.png)
 
 ### 2.1 设置网络延时
 
 - fiddler 主要是使用 Rules->Performance->Simulate Modem Speeds 功能进行的网络延迟模拟，点击 Rules->Customize Rules 进行设置，打开自定义脚本编辑器，如下图所示:
-  ![Image text](images/6.png)
+  ![Image text](img/6.png)
 - 设置完成后，在 fiddler 里将 Rules->Performance->Simulate Modem Speeds 选中即可使设置生效。
-  ![Image text](images/7.png)
+  ![Image text](img/7.png)
 
 ## 3. 网络参考
 
 ### 3.1 2G 网络
 
-![Image text](images/2.png)
+![Image text](img/2.png)
 
 ### 3.2 3G 网络
 
-![Image text](images/3.png)
+![Image text](img/3.png)
 
 ### 3.2 4G 网络
 
-![Image text](images/4.png)
+![Image text](img/4.png)

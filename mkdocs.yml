@@ -3,7 +3,7 @@ site_favicon: images/logo.ico # 图标
 site_author: VTest
 site_description: VTest
 # site_url: https://www.vtest.top
-copyright: Copyright © 2020 <a href="/about/">VTest Team</a>. <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备20004061号-1</a> # 版权
+copyright: Copyright © 2020 VTest All Rights Reserved. <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备20004061号-1</a> # 版权
 
 theme: # 样式
   name: material
@@ -60,7 +60,8 @@ extra_css:
 
 nav:
   - 首页: index.md
-  - 软件测试:
+  - 软件测试之路:
+      - 软件测试大纲: softtest/test.md
       - 移动端测试: softtest/app_1.md
       - 移动端弱网测试: softtest/app_2.md
       - 移动自动化测试之Appium: softtest/app_3.md
