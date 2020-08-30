@@ -46,7 +46,7 @@
 /* 主体 */
 .md-main {
   flex-grow: 1;
-  background-color: honeydew;
+  background-color: #ffffff;
 }
 .md-main__inner {
   display: flex;
