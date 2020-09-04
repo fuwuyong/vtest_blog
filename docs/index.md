@@ -1,1 +1,4 @@
-![Image text](images/1.jfif)
+---
+template: overrides/home.html
+title: 首页
+---

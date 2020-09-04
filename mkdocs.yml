@@ -1,65 +1,127 @@
 site_name: VTest # 项目名称
-# site_favicon: images/logo.ico # 图标
 site_author: VTest
-site_description: VTest
-site_uri: https://www.vtest.top
-copyright: Copyright © 2020 VTest All Rights Reserved. <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备20004061号-1</a> # 版权
+site_footer: 科学，劳动，实际工作？？才能够使我们病态的，放荡的青年清醒过来！
+site_title: 科学需要人的全部生命
+site_content: 科学是老老实实的学问，不可能靠运气来创造发明，对一个问题的本质不了解，就是碰上机会也是枉然。入宝山而空手回，原因在此。进步不是什么事件，而是一种需要！
+site_description: mkdocs, 软件测试, 功能测试, 黑盒测试, 白盒测试, 安全测试, 自动化测试, python, selenium, httprunner
+site_url: https://www.vtest.top
+copyright: Copyright &copy; 2020 VTest All Rights Reserved. <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备20004061号-1</a> # 版权
 
-theme: # 样式
-  name: material
-  language: zh
-  palette: # 颜色
-    primary: flatly # light blue
-    accent: indigo
-  feature:
-    tabs: true # 横向导航
-  # custom_dir: 'docs/resources/'
-  logo: images/logo.png
-  favicon: images/logo.ico
-  # # palette:
-  # primary: black
-  accent: deep orange
-
-markdown_extensions:
-  - admonition # 提示块
-  - footnotes # 脚注
-  - meta # 定义元数据，通过文章上下文控制，如disqus
-  - pymdownx.caret # 下划线上标
-  - pymdownx.tilde # 删除线下标
-  - pymdownx.critic # 增加删除修改高亮注释，可修饰行内或段落
-  - pymdownx.details # 提示块可折叠
-  - pymdownx.inlinehilite # 行内代码高亮
-  - pymdownx.mark # 文本高亮
-  - pymdownx.smartsymbols # 符号转换
-  - pymdownx.superfences # 代码嵌套在列表里
-  - pymdownx.arithmatex # 数学公式
-  - pymdownx.magiclink # 自动识别超链接
-  - markdown.extensions.attr_list
-  - codehilite: # 代码高亮，显示行号
-      guess_lang: false
-      linenums: true
-  - toc: # 锚点
-      permalink: true
-  - pymdownx.betterem: # 对加粗和斜体更好的检测
-      smart_enable: all
-  - pymdownx.tasklist: # 复选框checklist
-      custom_checkbox: true
-  - pymdownx.emoji: # 表情
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
-
-plugins:
-  - search:
-      lang: en
-      # foo: bar
-# - pdf-export #这个插件还有点问题 pip3 install mkdocs-pdf-export-plugin
-#
-#
-
+# git配置
+repo_name: VTest Docs
 repo_url: https://github.com/fuwuyong/vtest_blog
+edit_uri: ""
 
-extra_css:
-  - css/extra.css
+# 样式配置
+theme:
+  name: null
+  custom_dir: material
 
+  # 404页面
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: zh
+  features:
+    - tabs
+    - instant
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.ico
+  logo: assets/logo.png
+  icon:
+    logo: logo
+
+# extra_css:
+#   - assets/css/extra.css
+
+# 插件
+plugins:
+  - search
+  # - redirects:
+  #     redirect_maps:
+  #       extensions/admonition.md: reference/admonitions.md
+  #       extensions/codehilite.md: reference/code-blocks.md
+  #       extensions/footnotes.md: reference/footnotes.md
+  #       extensions/metadata.md: reference/meta-tags.md
+  #       extensions/permalinks.md: setup/setting-up-navigation.md #permalink
+  #       extensions/pymdown.md: reference/admonitions.md
+  #       plugins/search.md: setup/setting-up-site-search.md
+  #       plugins/revision-date.md: setup/adding-a-git-repository.md #revision-date
+  #       releases/4.md: upgrading.md #upgrading-from-4x-to-5x
+  #       releases/5.md: upgrading.md #upgrading-from-3x-to-4x
+  #       releases/changelog.md: changelog.md
+  #       sponsorship.md: insiders.md
+  - minify:
+      minify_html: true
+
+# 友情链接
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/squidfunk/mkdocs-material
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/squidfunk
+
+# 扩展
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# 页面
 nav:
   - 首页: index.md
   - 软件测试之路:
